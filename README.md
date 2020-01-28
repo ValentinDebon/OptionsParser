@@ -4,7 +4,8 @@ Small Swift DSL to ease command line options parsing.
 
 ## Example
 
-```{swift}
+```swift
+import OptionsParser
 
 class Configuration {
 	var a = false
@@ -27,7 +28,11 @@ print(arguments)
 
 Just include the following line in your `Package.swift`:
 
-```{swift}
+```swift
 .package(url: "https://github.com/ValentinDebon/OptionsParser.git", from: "0.0.1"),
 ```
 
+Note that OptionsParser requires macOS 10.15 minimum to run, you may also need to add the following in `Package.swift`:
+```swift
+platforms: [ .macOS(.v10_15) ],
+```
