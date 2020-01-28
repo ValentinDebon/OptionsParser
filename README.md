@@ -1,6 +1,6 @@
 # OptionsParser
 
-Small Swift DSL to ease command line options parsing.
+Small Swift DSL to ease command line options parsing. Distributed under BSD-3, see `LICENSE`.
 
 ## Example
 
